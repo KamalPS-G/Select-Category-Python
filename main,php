@@ -9,12 +9,12 @@ category = int(input("Select category: "))
 if category == 1:
   discount_kind = input("Is the product expiring in a month? (Yes or No) ")
 
-  if discount_kind == "yes" or "Yes":
+  if discount_kind == "yes":
     discount = 0.10 * price
     discount_price = price - discount
     print("Discounted price = Rs.",discount_price)
   
-  if discount_kind == "no" or "No":
+  if discount_kind == "no":
     discount = 0.05 * price
     discount_price = price - discount
     print("Discounted price = Rs.",discount_price)
