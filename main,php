@@ -1,0 +1,20 @@
+#Program to find discounted price of an item depending upon its category
+price = int(input("Enter price of item: "))
+
+print("1. Seasonal Food Item")
+print("2. Season Clothes")
+
+category = int(input("Select category: "))
+
+if category == 1:
+  discount_kind = input("Is the product expiring in a month? (Yes or No) ")
+
+  if discount_kind == "yes" or "Yes":
+    discount = 0.10 * price
+    discount_price = price - discount
+    print("Discounted price = Rs.",discount_price)
+  
+  if discount_kind == "no" or "No":
+    discount = 0.05 * price
+    discount_price = price - discount
+    print("Discounted price = Rs.",discount_price)
